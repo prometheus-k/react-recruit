@@ -70,7 +70,7 @@ function App() {
           <Routes>
             <Route path="/" exact element={<MainView/>}></Route>
             <Route path="/RecruitView"element={<RecruitView/>}></Route>
-            <Route path="/QnaView" element={<QnaView/>}></Route>
+            {/* <Route path="/QnaView" element={<QnaView/>}></Route> */}
             <Route path="/FaqView" element={<FaqView/>}></Route>
             <Route path="/SupportView" element={<SupportView/>}></Route>
             <Route path="/StoryView" element={<StoryView/>}></Route>
