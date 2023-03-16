@@ -7,7 +7,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
-import {Link as RouterLink,} from 'react-router-dom';
+import { Link as RouterLink, } from 'react-router-dom';
 import Link from '@mui/material/Link';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -37,10 +37,10 @@ const breadcrumbNameMap = {
   '/MapView': '찾아오시는길',
 };
 const fruits = [
-  { id: 1, name: '채용공고', path: 'FristView'},
-  { id: 2, name: '이야기', path: 'TwoView'},
-  { id: 3, name: '자주묻는질문', path: 'ThreeView'},
-  { id: 4, name: '나의지원현황', path: 'FourView'},  
+  { id: 1, name: '채용공고', path: 'FristView' },
+  { id: 2, name: '이야기', path: 'TwoView' },
+  { id: 3, name: '자주묻는질문', path: 'ThreeView' },
+  { id: 4, name: '나의지원현황', path: 'FourView' },
 ];
 
 const Search = styled('div')(({ theme }) => ({
@@ -122,11 +122,11 @@ function HeaderDrawerAppBar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography             variant="h6"
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'block', sm: 'block' } }}>
-                    <List>            
-            <ListItemLink to="/" />
+      <Typography variant="h6"
+        component="div"
+        sx={{ flexGrow: 1, display: { xs: 'block', sm: 'block' } }}>
+        <List>
+          <ListItemLink to="/" />
         </List>
       </Typography>
 
@@ -140,14 +140,14 @@ function HeaderDrawerAppBar(props) {
           </ListItem>
         ))}
       </List> */}
-      <List>            
-            <ListItemLink to="/RecruitView" />
-            {/* <ListItemLink to="/QnaView" /> */}
-            <ListItemLink to="/FaqView" />
-            <ListItemLink to="/SupportView" />
-            <ListItemLink to="/StoryView" />
-            <ListItemLink to="/MapView" />
-        </List>
+      <List>
+        <ListItemLink to="/RecruitView" />
+        {/* <ListItemLink to="/QnaView" /> */}
+        <ListItemLink to="/FaqView" />
+        <ListItemLink to="/SupportView" />
+        <ListItemLink to="/StoryView" />
+        <ListItemLink to="/MapView" />
+      </List>
     </Box>
   );
 
@@ -160,9 +160,9 @@ function HeaderDrawerAppBar(props) {
           <IconButton
             color="inherit"
             aria-label="open drawer"
-            edge="start"            
+            edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' }}}
+            sx={{ mr: 2, display: { sm: 'none' } }}
           >
             <MenuIcon />
           </IconButton>
@@ -171,8 +171,8 @@ function HeaderDrawerAppBar(props) {
             variant="h6"
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'block', sm: 'block' } }}
-          > 
-           Kbank 인재영입
+          >
+            Kbank 인재영입
           </Typography>
           {/* <Search>
             <SearchIconWrapper>

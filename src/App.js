@@ -1,5 +1,5 @@
 
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -27,7 +27,7 @@ function App() {
     status: {
       danger: '#e53e3e',
     },
-     palette: {
+    palette: {
       primary: {
         // light: will be calculated from palette.primary.main,
         main: '#0F0060',
@@ -61,26 +61,26 @@ function App() {
       // mode: 'dark',
     }
   });
-    return (
-      <ThemeProvider theme={theme}>
-        <Box sx={{ display: 'flex' }}>
+  return (
+    <ThemeProvider theme={theme}>
+      <Box sx={{ display: 'flex' }}>
         <CssBaseline />
         <BrowserRouter>
-        <HeaderDrawerAppBar></HeaderDrawerAppBar>
+          <HeaderDrawerAppBar></HeaderDrawerAppBar>
           <Routes>
-            <Route path="/" exact element={<MainView/>}></Route>
-            <Route path="/RecruitView"element={<RecruitView/>}></Route>
+            <Route path="/" exact element={<MainView />}></Route>
+            <Route path="/RecruitView" element={<RecruitView />}></Route>
             {/* <Route path="/QnaView" element={<QnaView/>}></Route> */}
-            <Route path="/FaqView" element={<FaqView/>}></Route>
-            <Route path="/SupportView" element={<SupportView/>}></Route>
-            <Route path="/StoryView" element={<StoryView/>}></Route>
-            <Route path="/MapView" element={<MapView/>}></Route>
-            <Route path="/*" element={<EmptyPage/>}></Route>
+            <Route path="/FaqView" element={<FaqView />}></Route>
+            <Route path="/SupportView" element={<SupportView />}></Route>
+            <Route path="/StoryView" element={<StoryView />}></Route>
+            <Route path="/MapView" element={<MapView />}></Route>
+            <Route path="/*" element={<EmptyPage />}></Route>
           </Routes>
         </BrowserRouter>
-        </Box>
-      </ThemeProvider>
-    
+      </Box>
+    </ThemeProvider>
+
   );
 }
 

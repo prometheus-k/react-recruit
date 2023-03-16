@@ -26,12 +26,12 @@ function FaqView() {
           자주묻는질문
         </Typography>
         <Box sx={{ '& > :not(style)': { m: 1 } }}>
-        <Fab variant="extended" size="medium" color="primary" aria-label="add">
-          영입절차
-        </Fab>
-        <Fab variant="extended" size="medium" color="primary" aria-label="add">
-          혜택 및 복지
-        </Fab>
+          <Fab variant="extended" size="medium" color="primary" aria-label="add">
+            영입절차
+          </Fab>
+          <Fab variant="extended" size="medium" color="primary" aria-label="add">
+            혜택 및 복지
+          </Fab>
         </Box>
       </Box>
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
@@ -138,12 +138,12 @@ function FaqView() {
           원하는 답변을 찾을 수 없었나요?
         </Typography>
         <Box sx={{ '& button': { m: 1 } }}>
-        <Button variant="contained" size="large">
-          메일 문의
-        </Button>
-        <Button variant="contained" size="large">
-          전화 문의
-        </Button>
+          <Button variant="contained" size="large">
+            메일 문의
+          </Button>
+          <Button variant="contained" size="large">
+            전화 문의
+          </Button>
         </Box>
       </Box>
     </Box>
