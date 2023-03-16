@@ -3,12 +3,12 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 
-function MainView() {
+function FaqView() {
   return (
       <Box component="main" sx={{ p: 3 }}>
-        <Toolbar />
+         <Toolbar />
         <Typography>
-          메인 화면입니다.
+          자주묻는질문
         </Typography>
       </Box>
 
@@ -16,4 +16,4 @@ function MainView() {
   );
 }
 
-export default MainView;
+export default FaqView;

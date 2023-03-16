@@ -4,12 +4,14 @@ import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import HeaderDrawerAppBar from './component/recruit/HeaderDrawerAppBar'
-import MainView from './component/recruit/MainView'
-import FristView from './component/recruit/FristView'
-import TwoView from './component/recruit/TwoView'
-import ThreeView from './component/recruit/ThreeView'
-import FourView from './component/recruit/FourView'
-import EmptyPage from './component/EmptyPage';
+import FaqView from './component/recruit/view/FaqView'
+import MainView from './component/recruit/view/MainView'
+import MapView from './component/recruit/view/MapView'
+import QnaView from './component/recruit/view/QnaView'
+import RecruitView from './component/recruit/view/RecruitView'
+import StoryView from './component/recruit/view/StoryView'
+import SupportView from './component/recruit/view/SupportView'
+import EmptyPage from './component/recruit/view/EmptyPage'
 
 function App() {
   const theme = createTheme({
@@ -67,10 +69,12 @@ function App() {
         <HeaderDrawerAppBar></HeaderDrawerAppBar>
           <Routes>
             <Route path="/" exact element={<MainView/>}></Route>
-            <Route path="/FristView"element={<FristView/>}></Route>
-            <Route path="/TwoView" element={<TwoView/>}></Route>
-            <Route path="/ThreeView" element={<ThreeView/>}></Route>
-            <Route path="/FourView" element={<FourView/>}></Route>
+            <Route path="/RecruitView"element={<RecruitView/>}></Route>
+            <Route path="/QnaView" element={<QnaView/>}></Route>
+            <Route path="/FaqView" element={<FaqView/>}></Route>
+            <Route path="/SupportView" element={<SupportView/>}></Route>
+            <Route path="/StoryView" element={<StoryView/>}></Route>
+            <Route path="/MapView" element={<MapView/>}></Route>
             <Route path="/*" element={<EmptyPage/>}></Route>
           </Routes>
         </BrowserRouter>

@@ -29,10 +29,12 @@ const navItems = ['채용공고', '이야기', '자주묻는질문', '나의지�
 
 const breadcrumbNameMap = {
   '/': 'Kbank 인재영입',
-  '/FristView': '채용공고',
-  '/TwoView': '이야기',
-  '/ThreeView': '자주묻는질문',
-  '/FourView': '나의지원현황',
+  '/RecruitView': '채용공고',
+  '/QnaView': '문의하기',
+  '/FaqView': '자주묻는질문',
+  '/SupportView': '나의지원현황',
+  '/StoryView': '케미스토리',
+  '/MapView': '찾아오시는길',
 };
 const fruits = [
   { id: 1, name: '채용공고', path: 'FristView'},
@@ -139,10 +141,12 @@ function HeaderDrawerAppBar(props) {
         ))}
       </List> */}
       <List>            
-            <ListItemLink to="/FristView" />
-            <ListItemLink to="/TwoView" />
-            <ListItemLink to="/ThreeView" />
-            <ListItemLink to="/FourView" />
+            <ListItemLink to="/RecruitView" />
+            <ListItemLink to="/QnaView" />
+            <ListItemLink to="/FaqView" />
+            <ListItemLink to="/SupportView" />
+            <ListItemLink to="/StoryView" />
+            <ListItemLink to="/MapView" />
         </List>
     </Box>
   );

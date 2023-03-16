@@ -3,12 +3,12 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 
-function FristView() {
+function MapView() {
   return (
       <Box component="main" sx={{ p: 3 }}>
-        <Toolbar />
+         <Toolbar />
         <Typography>
-          채용공고
+        찾아오시는길
         </Typography>
       </Box>
 
@@ -16,4 +16,4 @@ function FristView() {
   );
 }
 
-export default FristView;
+export default MapView;
